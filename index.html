@@ -1,0 +1,43 @@
+from zipfile import ZipFile
+import os
+
+project_name = "unit1_derivation_site"
+folders = [
+    f"{project_name}/",
+    f"{project_name}/css/",
+    f"{project_name}/js/"
+]
+
+files = {
+    f"{project_name}/index.html": """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>11th Grade English - Unit 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Unit 1: Get the Message</h1>
+    <nav>
+      <a href="vocabulary.html">Vocabulary & Derivation</a> |
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <main>
+    <p>Welcome! This site helps you study Unit 1 of English Grade 11 with focus on word derivation.</p>
+  </main>
+</body>
+</html>""",
+
+    f"{project_name}/vocabulary.html": """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vocabulary & Derivation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Vocabulary & Derivation - Unit 1</h1>
+  <table>
+    <tr><th>Root</th><th
